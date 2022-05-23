@@ -62,7 +62,7 @@ graph TD
   PubMed-->invitroData
   PubMed-->Models
   PubMed-->CausalRelations
-  NER-->PubMed
+  PubMed-->NLP
   
   LiverTox-->LabExperiments
   KidneyTox-->LabExperiments
