@@ -17,7 +17,7 @@ graph TD
   Phymdos-->|SBMLConverter| MINERVA
   Phymdos-->|GraphQL| ASPIS4j
   CellsDesigner-->PhysMaps
-  MINERVA-->Physmaps
+  MINERVA-->PhysMaps
   
   SystematicReview-->Phase1AbstractScreen
   Phase1AbstractScreen-->Phase2FullTextDataExtraction
