@@ -62,7 +62,7 @@ graph TD
   BrainDevTox-->LabExperiments
   LabExperiments-->inVitroData
   
-  SlectionOfChemicals-->Cases-->LabExperiments
+  Cases-->SlectionOfChemicals-->LabExperiments
   LabExperiments-->ASPIS4j
   
   CTD-->geneExpressionData
