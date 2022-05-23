@@ -1,5 +1,12 @@
 ```mermaid
 graph TD
+  Cases-->LiverTox
+  Cases-->KidneyTox
+  Cases-->BrainDevTox
+  LiverTox-->SystematicReview
+  KidneyTox-->SystematicReview
+  
+  SelectionOfLiterature-->Systema
   SelectionOfExternalDataSources-->experimentalData
   invitroData-->Transcriptomics
   invitroData-->ToxCast
