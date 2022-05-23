@@ -40,6 +40,8 @@ graph TD
   animalData-->PhysMaps
   
   PhysMaps-->AOP-->qAOP
+  qAOP-->AI
+  PhysMaps-->AI
   
   SelectionOfExternalDataSources-->patientData
   SelectionOfExternalDataSources-->clinicalChemistryData
@@ -83,10 +85,10 @@ graph TD
   ASPIS4j[(ASPIS4j)]-->Models
   ASPIS4j[(ASPIS4j)]-->EndUsers
   ASPIS4j[(ASPIS4j)]-->FAIRsharing
-  ASPIS4j[(ASPIS4j)]-->RDF
+  ASPIS4j[(ASPIS4j)]-->RDF[(RDF)]
   RDF[(RDF)]-->ASPIS4j[(ASPIS4j)]
   AOPWiki-->|RDF| RDF[(RDF)]
-  WikiPathways
+  WikiPathways-->|RDF| pathwayData
   
   ASPIS4j[(ASPIS4j)]-->RASAR
   ASPIS4j[(ASPIS4j)]-->BNN
