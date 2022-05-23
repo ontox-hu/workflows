@@ -52,6 +52,10 @@ graph TD
   SelectionOfExternalDataSources-->Models
   SelectionOfExternalDataSources-->pathwayData
   
+  NCBI-->PubChem
+  NCBI-->PubMed
+  NCBI-->Bookshelf
+  NCBI-->PMC
   PubMed-->patientData
   PubMed-->clinicalChemistryData
   PubMed-->exposureData
@@ -78,7 +82,7 @@ graph TD
   ChEMBL[(ChEMBL)]-->compoundData
   CosmosDB[(CosmosDB)]-->compoundData
   
-  LiverToxBookshelf-->NLP
+  Bookshelf-->LiverToxBookshelf-->NLP
   compoundData-->ASPIS4j[(ASPIS4j)]
   geneExpressionData-->ASPIS4j[(ASPIS4j)] 
   invitroData-->ASPIS4j[(ASPIS4j)]
