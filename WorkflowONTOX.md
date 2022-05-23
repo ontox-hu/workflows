@@ -62,7 +62,7 @@ graph TD
   LiverTox-->LabExperiments
   KidneyTox-->LabExperiments
   BrainDevTox-->LabExperiments
-  LabExperiments-->inVitroData
+  LabExperiments-->invitroData
   
   Cases-->SlectionOfChemicals-->LabExperiments
   LabExperiments-->ASPIS4j[(ASPIS4j)]
