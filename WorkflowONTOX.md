@@ -22,9 +22,9 @@ graph TD
   SystematicReview-->Phase1AbstractScreen
   Phase1AbstractScreen-->Phase2FullTextDataExtraction
   Sysrev-->NaturalLanguageProcessing
-  NaturalLanguageProcessing-->|en-tox| NER
+  NLP-->|en-tox| NER
   NER-->|CREW| CausalRelations
-  CausalRelations-->AI
+  CausalRelations-->ASPIS4j[(ASPIS4j)]
   CausalRelations-->PhysMaps
   
   
@@ -65,7 +65,7 @@ graph TD
   LabExperiments-->inVitroData
   
   Cases-->SlectionOfChemicals-->LabExperiments
-  LabExperiments-->ASPIS4j
+  LabExperiments-->ASPIS4j[(ASPIS4j)]
   
   CTD-->geneExpressionData
   CTD-->|BIOBricks| ASPIS4j
@@ -74,16 +74,14 @@ graph TD
   ToxCast-->invitroData
   NCI60-->invitroData
   
-  clinicalChemistryData-->LiverToxBookshelfBook
- 
-  Tox21-->ASPIS4j[(ASPIS4j)]
-  ToxCast-->ASPIS4j[(ASPIS4j)]
-  NCI60-->ASPIS4j[(ASPIS4j)]
-  EPAADashboard-->ASPIS4j[(ASPIS4j)]
+  LiverToxBookshelf-->NLP
+  geneExpressionData-->ASPIS4j[(ASPIS4j)] 
+  invitroData-->ASPIS4j[(ASPIS4j)]
   animalData-->ASPIS4j[(ASPIS4j)]
   patientData-->ASPIS4j[(ASPIS4j)]
   invitroData-->ASPIS4j[(ASPIS4j)]
   exposureData-->ASPIS4j[(ASPIS4j)]
+  pathwayData-->ASPIS4j[(ASPIS4j)]
   ASPIS4j[(ASPIS4j)]-->Models
   ASPIS4j[(ASPIS4j)]-->EndUsers
   ASPIS4j[(ASPIS4j)]-->FAIRsharing
