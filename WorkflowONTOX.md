@@ -21,7 +21,7 @@ graph TD
   
   SystematicReview-->Phase1AbstractScreen
   Phase1AbstractScreen-->Phase2FullTextDataExtraction
-  Sysrev-->NaturalLanguageProcessing
+  Sysrev-->NLP
   NLP-->|en-tox| NER
   NER-->|CREW| CausalRelations
   CausalRelations-->ASPIS4j[(ASPIS4j)]
