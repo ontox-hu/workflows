@@ -42,8 +42,8 @@ graph TD
   animalData-->PhysMaps
   
   PhysMaps-->AOP-->qAOP
-  qAOP-->AI
-  PhysMaps-->AI
+  qAOP-->ASPIS4j[(ASPIS4j)]
+  PhysMaps-->ASPIS4j[(ASPIS4j)]
   
   SelectionOfExternalDataSources-->patientData
   SelectionOfExternalDataSources-->clinicalChemistryData
@@ -67,14 +67,18 @@ graph TD
   Cases-->SlectionOfChemicals-->LabExperiments
   LabExperiments-->ASPIS4j[(ASPIS4j)]
   
-  CTD-->geneExpressionData
-  CTD-->|BIOBricks| ASPIS4j
-  Tox21-->invitroData
-  EPAADashboard-->invitroData
-  ToxCast-->invitroData
-  NCI60-->invitroData
+  [(CTD)]-->geneExpressionData
+  [(CTD)]-->|BIOBricks|  ASPIS4j[(ASPIS4j)]
+  [(Tox21)]-->invitroData
+  [(EPAA)]-->invitroData
+  [(ToxCast)]-->invitroData
+  [(NCI60)]-->invitroData
+  [(Pubchem)]-->compoundData
+  [(ChEMBL)]-->compoundData
+  [(CosmosDB)]-->compoundData
   
   LiverToxBookshelf-->NLP
+  compoundData-->ASPIS4j[(ASPIS4j)]
   geneExpressionData-->ASPIS4j[(ASPIS4j)] 
   invitroData-->ASPIS4j[(ASPIS4j)]
   animalData-->ASPIS4j[(ASPIS4j)]
@@ -89,6 +93,7 @@ graph TD
   RDF[(RDF)]-->ASPIS4j[(ASPIS4j)]
   AOPWiki-->|RDF| RDF[(RDF)]
   WikiPathways-->|RDF| pathwayData
+  RDF[(RDF)]-->AOP
   
   ASPIS4j[(ASPIS4j)]-->RASAR
   ASPIS4j[(ASPIS4j)]-->BNN
