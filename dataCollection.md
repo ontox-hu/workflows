@@ -3,32 +3,50 @@ graph TD
   Cases-->LiverTox
   Cases-->KidneyTox
   Cases-->BrainDevTox
+  
   LiverTox-->SystematicReview
   KidneyTox-->SystematicReview
   BrainDevTox-->SystematicReview
+  
   SystematicReview-->Phase1AbstractScreen
   SystematicReview-->Phase2FullTextDataExtraction
-  Phase2FullTextDataExtraction-->PatientData
-  Phase2FullTextDataExtraction-->ClinicalChemistryData
-  Phase2FullTextDataExtraction-->ExposureData
-  Phase2FullTextDataExtraction-->InvitroData
+  
+  Phase2FullTextDataExtraction-->patientData
+  Phase2FullTextDataExtraction-->clinicalChemistryData
+  Phase2FullTextDataExtraction-->exposureData
+  Phase2FullTextDataExtraction-->invitroData
   Phase2FullTextDataExtraction-->Models
-  Phase2FullTextDataExtraction-->GeneExpressionData
-  Phase2FullTextDataExtraction-->AnimalData
-  SelectionOfExternalDataSources-->experimentalData
-  invitroData-->Transcriptomics
+  Phase2FullTextDataExtraction-->geneExpressionData
+  Phase2FullTextDataExtraction-->animalData
+  
+  SelectionOfExternalDataSources-->patientData
+  SelectionOfExternalDataSources-->clinicalChemistryData
+  SelectionOfExternalDataSources-->exposureData
+  SelectionOfExternalDataSources-->invitroData
+  SelectionOfExternalDataSources-->Models
+  SelectionOfExternalDataSources-->
+  
+  
+  LiverToxLab-->LabExperiments
+  KidneyTox-->LabExperiments
+  BrainDevTox-->LabExperiments
+  
+  SlectionOfChemicals-->LabExperiments
+  
+  invitroData-->ComparativeToxicogenomicsDatabase
+  invitroData-->Tox21
+  invitroData-->EPAADashboard
   invitroData-->ToxCast
   invitroData-->NCI60
-  SelectionOfExternalDataSources-->patientData
-  SelectionOfExternalDataSources-->exposureData
-  experimentalData-->animalData
-  experimentalData-->invitroData
-  animalData-->VHPRepository
-  patientData-->VHPRepository
-  Transcriptomics-->VHPRepository
-  exposureData-->VHPRepository
-  VHPRepository-->Models
-  VHPRepository-->EndUsers
-  VHPRepository-->FAIRsharing
-  VHPRepository-->Bio.tools
+  
+  clinicalChemistryData-->LiverToxBookshelfBook
+ 
+  animalData-->ASPIS4j
+  patientData-->ASPIS4j
+  invitroData-->ASPIS4j
+  exposureData-->ASPIS4j
+  ASPIS4j-->Models
+  ASPIS4j-->EndUsers
+  ASPIS4j-->FAIRsharing
+  ASPIS4j-->Bio.tools
 ```
