@@ -13,7 +13,7 @@ graph TD
   
   Sysrev-->|SBtabLabels| rsr
   rsr-->|SysrevAPI| Phymdos
-  Phymdos-->|SBMLConverter| Celldesigner
+  Phymdos-->|SBMLConverter| CellDesigner
   Phymdos-->|SBMLConverter| MINERVA
   Phymdos-->|GraphQL| ASPIS4j
   CellsDesigner-->PhysMaps
@@ -33,10 +33,12 @@ graph TD
   Phase2FullTextDataExtraction-->geneExpressionData
   Phase2FullTextDataExtraction-->animalData
   
-  PhysMaps-->clinicalChemistryData
-  PhysMaps-->invitroData
-  PhysMaps-->geneExpressionData
-  PhysMaps-->animalData
+  clinicalChemistryData-->PhysMaps
+  invitroData-->PhysMaps
+  geneExpressionData-->PhysMaps
+  animalData-->PhysMaps
+  
+  PhysMaps-->AOP-->qAOP
   
   SelectionOfExternalDataSources-->patientData
   SelectionOfExternalDataSources-->clinicalChemistryData
@@ -44,11 +46,11 @@ graph TD
   SelectionOfExternalDataSources-->invitroData
   SelectionOfExternalDataSources-->Models
   
-  LiverToxLab-->LabExperiments
+  LiverTox-->LabExperiments
   KidneyTox-->LabExperiments
   BrainDevTox-->LabExperiments-->invitroData
   
-  SlectionOfChemicals-->LabExperiments
+  SlectionOfChemicals-->Cases-->LabExperiments
   LabExperiments-->ASPIS4j
   
   invitroData-->ComparativeToxicogenomicsDatabase
