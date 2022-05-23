@@ -31,14 +31,19 @@ graph TD
   
   SlectionOfChemicals-->LabExperiments
   
-  invitroData-->ComparativeToxicogenomicsDatabase-->ASPIS4j
-  invitroData-->Tox21-->ASPIS4j
-  invitroData-->EPAADashboard-->ASPIS4j
-  invitroData-->ToxCast-->ASPIS4j
-  invitroData-->NCI60-->ASPIS4j
+  invitroData-->ComparativeToxicogenomicsDatabase
+  ComparativeToxicogenomicsDatabase-->ASPIS4j
+  invitroData-->Tox21
+  invitroData-->EPAADashboard
+  invitroData-->ToxCast
+  invitroData-->NCI60
   
   clinicalChemistryData-->LiverToxBookshelfBook
  
+  Tox21-->ASPIS4j
+  ToxCast-->ASPIS4j
+  NCI60-->ASPIS4j
+  EPAADashboard-->ASPIS4j
   animalData-->ASPIS4j
   patientData-->ASPIS4j
   invitroData-->ASPIS4j
