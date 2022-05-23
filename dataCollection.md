@@ -42,17 +42,17 @@ graph TD
   
   clinicalChemistryData-->LiverToxBookshelfBook
  
-  Tox21-->[(ASPIS4j)]
-  ToxCast-->[(ASPIS4j)]
-  NCI60-->[(ASPIS4j)]
-  EPAADashboard-->[(ASPIS4j)]
-  animalData-->[(ASPIS4j)]
-  patientData-->[(ASPIS4j)]
-  invitroData-->[(ASPIS4j)]
-  exposureData-->[(ASPIS4j)]
-  [(ASPIS4j)]-->Models
-  [(ASPIS4j)]-->EndUsers
-  [(ASPIS4j)]-->FAIRsharing
-  [(ASPIS4j)]-->RDF
-  [(RDF)]-->[(ASPIS4j)]
+  Tox21-->ASPIS4j[(ASPIS4j)]
+  ToxCast-->ASPIS4j[(ASPIS4j)]
+  NCI60-->ASPIS4j[(ASPIS4j)]
+  EPAADashboard-->ASPIS4j[(ASPIS4j)]
+  animalData-->ASPIS4j[(ASPIS4j)]
+  patientData-->ASPIS4j[(ASPIS4j)]
+  invitroData-->ASPIS4j[(ASPIS4j)]
+  exposureData-->ASPIS4j[(ASPIS4j)]
+  ASPIS4j[(ASPIS4j)]-->Models
+  ASPIS4j[(ASPIS4j)]-->EndUsers
+  ASPIS4j[(ASPIS4j)]-->FAIRsharing
+  ASPIS4j[(ASPIS4j)]-->RDF
+  RDF[(RDF)]-->ASPIS4j[(ASPIS4j)]
 ```
