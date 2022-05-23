@@ -5,8 +5,16 @@ graph TD
   Cases-->BrainDevTox
   LiverTox-->SystematicReview
   KidneyTox-->SystematicReview
-  
-  SelectionOfLiterature-->Systema
+  BrainDevTox-->SystematicReview
+  SystematicReview-->Phase1AbstractScreen
+  SystematicReview-->Phase2FullTextDataExtraction
+  Phase2FullTextDataExtraction-->PatientData
+  Phase2FullTextDataExtraction-->ClinicalChemistryData
+  Phase2FullTextDataExtraction-->ExposureData
+  Phase2FullTextDataExtraction-->InvitroData
+  Phase2FullTextDataExtraction-->Models
+  Phase2FullTextDataExtraction-->GeneExpressionData
+  Phase2FullTextDataExtraction-->AnimalData
   SelectionOfExternalDataSources-->experimentalData
   invitroData-->Transcriptomics
   invitroData-->ToxCast
