@@ -1,5 +1,8 @@
 ```mermaid
 graph TD
+  
+  ONTOX-->Cases
+
   Cases-->LiverTox
   Cases-->KidneyTox
   Cases-->BrainDevTox
@@ -55,4 +58,12 @@ graph TD
   ASPIS4j[(ASPIS4j)]-->FAIRsharing
   ASPIS4j[(ASPIS4j)]-->RDF
   RDF[(RDF)]-->ASPIS4j[(ASPIS4j)]
+  
+  ASPIS4j[(ASPIS4j)]-->RASAR
+  ASPIS4j[(ASPIS4j)]-->BNN
+  RASAR-->AI
+  BNN-->AI
+  AI-->ProbRA
+  
+  
 ```
