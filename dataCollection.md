@@ -9,7 +9,7 @@ graph TD
   BrainDevTox-->SystematicReview
   
   SystematicReview-->Phase1AbstractScreen
-  SystematicReview-->Phase2FullTextDataExtraction
+  Phase1AbstractScreen-->Phase2FullTextDataExtraction
   
   Phase2FullTextDataExtraction-->patientData
   Phase2FullTextDataExtraction-->clinicalChemistryData
