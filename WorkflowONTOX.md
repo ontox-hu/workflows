@@ -67,15 +67,15 @@ graph TD
   Cases-->SlectionOfChemicals-->LabExperiments
   LabExperiments-->ASPIS4j[(ASPIS4j)]
   
-  [(CTD)]-->geneExpressionData
-  [(CTD)]-->|BIOBricks|  ASPIS4j[(ASPIS4j)]
-  [(Tox21)]-->invitroData
-  [(EPAA)]-->invitroData
-  [(ToxCast)]-->invitroData
-  [(NCI60)]-->invitroData
-  [(Pubchem)]-->compoundData
-  [(ChEMBL)]-->compoundData
-  [(CosmosDB)]-->compoundData
+  CTD[(CTD)]-->geneExpressionData
+  CTD[(CTD)]-->|BIOBricks|  ASPIS4j[(ASPIS4j)]
+  Tox21[(Tox21)]-->invitroData
+  EPAA[(EPAA)]-->invitroData
+  ToxCast[(ToxCast)]-->invitroData
+  NCI60[(NCI60)]-->invitroData
+  PubChem[(Pubchem)]-->compoundData
+  ChEMBL[(ChEMBL)]-->compoundData
+  CosmosDB[(CosmosDB)]-->compoundData
   
   LiverToxBookshelf-->NLP
   compoundData-->ASPIS4j[(ASPIS4j)]
