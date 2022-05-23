@@ -11,7 +11,7 @@ graph TD
   KidneyTox-->SystematicReview-->Sysrev
   BrainDevTox-->SystematicReview-->Sysrev
   
-  Sysrev: SBtabLabels-->>rsr: SBMLConverter-->>Phymdos: SBML-->ASPIS4j
+  Sysrev-->>rsr: SBtabLabels-->>Phymdos: SBMLConverter-->>ASPIS4j: Webhook
   
   SystematicReview-->Phase1AbstractScreen
   Phase1AbstractScreen-->Phase2FullTextDataExtraction
