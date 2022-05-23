@@ -22,8 +22,9 @@ graph TD
   SystematicReview-->Phase1AbstractScreen
   Phase1AbstractScreen-->Phase2FullTextDataExtraction
   Sysrev-->NaturalLanguageProcessing
-  NaturalLanguageProcessing-->|'en-tox'|NER
-  NaturalLanguageProcessing
+  NaturalLanguageProcessing-->|en-tox| NER
+  NER-->|CREW| CausalRelations
+  
   
   Phase2FullTextDataExtraction-->patientData
   Phase2FullTextDataExtraction-->clinicalChemistryData
@@ -45,6 +46,12 @@ graph TD
   SelectionOfExternalDataSources-->exposureData
   SelectionOfExternalDataSources-->invitroData
   SelectionOfExternalDataSources-->Models
+  PubMed-->patientData
+  PubMed-->clinicalChemistryData
+  PubMed-->exposureData
+  PubMed-->invitroData
+  PubMed-->Models
+  NER-->PubMed
   
   LiverTox-->LabExperiments
   KidneyTox-->LabExperiments
