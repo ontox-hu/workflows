@@ -51,6 +51,6 @@ graph TD
   ASPIS4j-->Models
   ASPIS4j-->EndUsers
   ASPIS4j-->FAIRsharing
-  [ASPIS4j]-->[RDF]
-  [RDF]-->[APIS4j]
+  ASPIS4j-->RDF
+  RDF-->APIS4j
 ```
