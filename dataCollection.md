@@ -24,8 +24,6 @@ graph TD
   SelectionOfExternalDataSources-->exposureData
   SelectionOfExternalDataSources-->invitroData
   SelectionOfExternalDataSources-->Models
-  SelectionOfExternalDataSources-->
-  
   
   LiverToxLab-->LabExperiments
   KidneyTox-->LabExperiments
@@ -33,11 +31,11 @@ graph TD
   
   SlectionOfChemicals-->LabExperiments
   
-  invitroData-->ComparativeToxicogenomicsDatabase
-  invitroData-->Tox21
-  invitroData-->EPAADashboard
-  invitroData-->ToxCast
-  invitroData-->NCI60
+  invitroData-->ComparativeToxicogenomicsDatabase-->ASPIS4j
+  invitroData-->Tox21-->ASPIS4j
+  invitroData-->EPAADashboard-->ASPIS4j
+  invitroData-->ToxCast-->ASPIS4j
+  invitroData-->NCI60-->ASPIS4j
   
   clinicalChemistryData-->LiverToxBookshelfBook
  
@@ -48,5 +46,6 @@ graph TD
   ASPIS4j-->Models
   ASPIS4j-->EndUsers
   ASPIS4j-->FAIRsharing
-  ASPIS4j-->Bio.tools
+  [ASPIS4j]-->[RDF]
+  [RDF]-->[APIS4j]
 ```
