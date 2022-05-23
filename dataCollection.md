@@ -4,9 +4,11 @@ graph TD
   Cases-->KidneyTox
   Cases-->BrainDevTox
   
-  LiverTox-->SystematicReview
-  KidneyTox-->SystematicReview
-  BrainDevTox-->SystematicReview
+  LiverTox-->SystematicReview-->Sysrev
+  KidneyTox-->SystematicReview-->Sysrev
+  BrainDevTox-->SystematicReview-->Sysrev
+  
+  Sysrev-->{rsr}-->ASPIS4j
   
   SystematicReview-->Phase1AbstractScreen
   Phase1AbstractScreen-->Phase2FullTextDataExtraction
