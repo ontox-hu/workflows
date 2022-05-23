@@ -46,6 +46,8 @@ graph TD
   SelectionOfExternalDataSources-->exposureData
   SelectionOfExternalDataSources-->invitroData
   SelectionOfExternalDataSources-->Models
+  SelectionOfExternalDataSources-->pathwayData
+  
   PubMed-->patientData
   PubMed-->clinicalChemistryData
   PubMed-->exposureData
@@ -55,17 +57,18 @@ graph TD
   
   LiverTox-->LabExperiments
   KidneyTox-->LabExperiments
-  BrainDevTox-->LabExperiments-->invitroData
+  BrainDevTox-->LabExperiments
+  LabExperiments-->inVitroData
   
   SlectionOfChemicals-->Cases-->LabExperiments
   LabExperiments-->ASPIS4j
   
-  invitroData-->ComparativeToxicogenomicsDatabase
-  CTD-->|BIOBricks|ASPIS4j
-  invitroData-->Tox21
-  invitroData-->EPAADashboard
-  invitroData-->ToxCast
-  invitroData-->NCI60
+  CTD-->geneExpressionData
+  CTD-->|BIOBricks| ASPIS4j
+  Tox21-->invitroData
+  EPAADashboard-->invitroData
+  ToxCast-->invitroData
+  NCI60-->invitroData
   
   clinicalChemistryData-->LiverToxBookshelfBook
  
@@ -82,6 +85,8 @@ graph TD
   ASPIS4j[(ASPIS4j)]-->FAIRsharing
   ASPIS4j[(ASPIS4j)]-->RDF
   RDF[(RDF)]-->ASPIS4j[(ASPIS4j)]
+  AOPWiki-->|RDF| RDF[(RDF)]
+  WikiPathways
   
   ASPIS4j[(ASPIS4j)]-->RASAR
   ASPIS4j[(ASPIS4j)]-->BNN
