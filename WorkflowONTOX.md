@@ -57,7 +57,7 @@ graph TD
   PubMed-->exposureData
   PubMed-->invitroData
   PubMed-->Models
-  Pubchem-->CausalRelations
+  PubMed-->CausalRelations
   NER-->PubMed
   
   LiverTox-->LabExperiments
