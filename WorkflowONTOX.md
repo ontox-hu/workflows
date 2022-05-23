@@ -68,7 +68,7 @@ graph TD
   LabExperiments-->ASPIS4j[(ASPIS4j)]
   
   CTD[(CTD)]-->geneExpressionData
-  CTD[(CTD)]-->|BIOBricks|  ASPIS4j[(ASPIS4j)]
+  CTD[(CTD)]-->ASPIS4j[(ASPIS4j)]
   Tox21[(Tox21)]-->invitroData
   EPAA[(EPAA)]-->invitroData
   ToxCast[(ToxCast)]-->invitroData
