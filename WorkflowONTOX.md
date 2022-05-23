@@ -24,6 +24,8 @@ graph TD
   Sysrev-->NaturalLanguageProcessing
   NaturalLanguageProcessing-->|en-tox| NER
   NER-->|CREW| CausalRelations
+  CausalRelations-->AI
+  CausalRelations-->PhysMaps
   
   
   Phase2FullTextDataExtraction-->patientData
