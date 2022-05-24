@@ -1,6 +1,8 @@
 ```mermaid
 flowchart TD
-  
+ 
+%% LiteratureToAOP
+
   ONTOX-->Cases
 
   Cases-->LiverTox
@@ -30,7 +32,7 @@ flowchart TD
   CausalRelations-->ASPIS4j[(ASPIS4j)]
   CausalRelations-->PhysMaps
   
-  
+
   Phase2FullTextDataExtraction-->patientData
   Phase2FullTextDataExtraction-->clinicalChemistryData
   Phase2FullTextDataExtraction-->exposureData
@@ -51,7 +53,10 @@ flowchart TD
   PhysMaps-->AOP-->qAOP
   qAOP-->ASPIS4j[(ASPIS4j)]
   PhysMaps-->ASPIS4j[(ASPIS4j)]
-  
+
+%% ExternalData
+
+
   SelectionOfExternalDataSources-->patientData
   SelectionOfExternalDataSources-->clinicalChemistryData
   SelectionOfExternalDataSources-->exposureData
