@@ -7,9 +7,11 @@ graph TD
   Cases-->KidneyTox
   Cases-->BrainDevTox
   
-  LiverTox-->SystematicReview-->Sysrev[(Sysrev)]
-  KidneyTox-->SystematicReview-->Sysrev[(Sysrev)]
-  BrainDevTox-->SystematicReview--Sysrev[(Sysrev)]
+  LiverTox-->SystematicReview
+  KidneyTox-->SystematicReview
+  BrainDevTox-->SystematicReview
+  
+  SystematicReview-->Sysrev[(Sysrev)]
   
   Sysrev[(Sysrev)]-->|SBtabLabels| rsr
   rsr-->|SysrevAPI| Phymdos
