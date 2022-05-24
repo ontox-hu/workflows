@@ -7,11 +7,11 @@ graph TD
   Cases-->KidneyTox
   Cases-->BrainDevTox
   
-  LiverTox-->SystematicReview-->Sysrev
-  KidneyTox-->SystematicReview-->Sysrev
-  BrainDevTox-->SystematicReview-->Sysrev
+  LiverTox-->SystematicReview-->Sysrev[(Sysrev)]
+  KidneyTox-->SystematicReview-->Sysrev[(Sysrev)]
+  BrainDevTox-->SystematicReview-->Sysrev[(Sysrev)]
   
-  Sysrev-->|SBtabLabels| rsr
+  Sysrev[(Sysrev)]-->|SBtabLabels| rsr
   rsr-->|SysrevAPI| Phymdos
   Phymdos-->|SBMLConverter| CellDesigner
   Phymdos-->|SBMLConverter| MINERVA
@@ -22,7 +22,7 @@ graph TD
   
   SystematicReview-->Phase1AbstractScreen
   Phase1AbstractScreen-->Phase2FullTextDataExtraction
-  Sysrev-->NLP
+  Sysrev[(Sysrev)]-->NLP
   NLP-->|en-tox| NER
   NER-->|CREW| CausalRelations
   CausalRelations-->ASPIS4j[(ASPIS4j)]
@@ -41,6 +41,10 @@ graph TD
   invitroData-->PhysMaps
   geneExpressionData-->PhysMaps
   animalData-->PhysMaps
+  exposureData-->qAOP
+  clinicalChemistryData-->qAOP
+  patientData-->qAOP
+  animalData-->qAOP
   
   PhysMaps-->AOP-->qAOP
   qAOP-->ASPIS4j[(ASPIS4j)]
@@ -53,17 +57,17 @@ graph TD
   SelectionOfExternalDataSources-->Models
   SelectionOfExternalDataSources-->pathwayData
   
-  NCBI-->PubChem
-  NCBI-->PubMed
-  NCBI-->Bookshelf
-  NCBI-->PMC
-  PubMed-->patientData
-  PubMed-->clinicalChemistryData
-  PubMed-->exposureData
-  PubMed-->invitroData
-  PubMed-->Models
-  PubMed-->CausalRelations
-  PubMed-->NLP
+  NCBI-->PubChem[(PubChem)]
+  NCBI-->PubMed[(PubMed)]
+  NCBI-->Bookshelf[(Bookshelf)]
+  NCBI-->PMC[(PMC)]
+  PubMed[(PubMed)]-->patientData
+  PubMed[(PubMed)]-->clinicalChemistryData
+  PubMed[(PubMed)]-->exposureData
+  PubMed[(PubMed)]-->invitroData
+  PubMed[(PubMed)]-->Models
+  PubMed[(PubMed)]-->CausalRelations
+  PubMed[(PubMed)]-->NLP
   
   LiverTox-->LabExperiments
   KidneyTox-->LabExperiments
@@ -83,7 +87,7 @@ graph TD
   ChEMBL[(ChEMBL)]-->compoundData
   CosmosDB[(CosmosDB)]-->compoundData
   
-  Bookshelf-->LiverToxBookshelf-->NLP
+  Bookshelf[(Bookshelf)]-->LiverToxBook-->NLP
   compoundData-->ASPIS4j[(ASPIS4j)]
   geneExpressionData-->ASPIS4j[(ASPIS4j)] 
   invitroData-->ASPIS4j[(ASPIS4j)]
