@@ -7,28 +7,28 @@ flowchart TD
   Cases-->KidneyTox
   Cases-->BrainDevTox
   
-  LiverTox-->SystematicReview
-  KidneyTox-->SystematicReview
-  BrainDevTox-->SystematicReview
+  LiverTox-->SystematicReview((SystematicReview))
+  KidneyTox-->SystematicReview((SystematicReview))
+  BrainDevTox-->SystematicReview((SystematicReview))
   
-  ((SystematicReview))-->Sysrev[(Sysrev)]
+  SystematicReview((SystematicReview))-->Sysrev[(Sysrev)]
   
   Sysrev[(Sysrev)]-->|SBtabLabels| rsr
   rsr-->|SysrevAPI| Phymdos
   Phymdos-->|SBMLConverter| CellDesigner
   Phymdos-->|SBMLConverter| MINERVA
   Phymdos-->|GraphQL| ASPIS4j
-  (CellDesigner)-->((PhysMaps))
-  (MINERVA)-->PhysMaps
+  CellDesigner(CellDesigner)-->PhysMaps((PhysMaps))
+  MINERVA(MINERVA)-->PhysMaps((PhysMaps))
   
   
-  SystematicReview-->Phase1AbstractScreen
+  SystematicReview((SystematicReview))-->Phase1AbstractScreen
   Phase1AbstractScreen-->Phase2FullTextDataExtraction
   Sysrev[(Sysrev)]-->NLP
   NLP-->|en-tox| NER
   NER-->|CREW| CausalRelations
   CausalRelations-->ASPIS4j[(ASPIS4j)]
-  CausalRelations-->PhysMaps
+  CausalRelations-->PhysMaps((PhysMaps))
   
   
   Phase2FullTextDataExtraction-->patientData
@@ -39,17 +39,17 @@ flowchart TD
   Phase2FullTextDataExtraction-->geneExpressionData
   Phase2FullTextDataExtraction-->animalData
   
-  clinicalChemistryData-->PhysMaps
-  invitroData-->PhysMaps
-  geneExpressionData-->PhysMaps
-  animalData-->PhysMaps
+  clinicalChemistryData-->PhysMaps((PhysMaps))
+  invitroData-->PhysMaps((PhysMaps))
+  geneExpressionData-->PhysMaps((PhysMaps))
+  animalData-->PhysMaps((PhysMaps))
   exposureData-->qAOP
   clinicalChemistryData-->qAOP
   patientData-->qAOP
   animalData-->qAOP
   
-  PhysMaps-->AOP-->qAOP
+  PhysMaps((PhysMaps))-->AOP-->qAOP
   qAOP-->ASPIS4j[(ASPIS4j)]
-  PhysMaps-->ASPIS4j[(ASPIS4j)]
+  PhysMaps((PhysMaps))-->ASPIS4j[(ASPIS4j)]
   
 ```
