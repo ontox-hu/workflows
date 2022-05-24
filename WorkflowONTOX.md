@@ -59,10 +59,10 @@ graph TD
   SelectionOfExternalDataSources-->Models
   SelectionOfExternalDataSources-->pathwayData
   
-  NCBI-->PubChem[(PubChem)]
-  NCBI-->PubMed[(PubMed)]
-  NCBI-->Bookshelf[(Bookshelf)]
-  NCBI-->PMC[(PMC)]
+  NCBI-->|BioBrick| PubChem[(PubChem)]
+  NCBI-->|BioBrick| PubMed[(PubMed)]
+  NCBI-->|BioBrick| Bookshelf[(Bookshelf)]
+  NCBI-->|BioBrick| PMC[(PMC)]
   PubMed[(PubMed)]-->patientData
   PubMed[(PubMed)]-->clinicalChemistryData
   PubMed[(PubMed)]-->exposureData
@@ -79,15 +79,15 @@ graph TD
   Cases-->SlectionOfChemicals-->LabExperiments
   LabExperiments-->ASPIS4j[(ASPIS4j)]
   
-  CTD[(CTD)]-->geneExpressionData
+  CTD[(CTD)]-->|BioBrick| geneExpressionData
   CTD[(CTD)]-->ASPIS4j[(ASPIS4j)]
-  Tox21[(Tox21)]-->invitroData
-  EPAA[(EPAA)]-->invitroData
-  ToxCast[(ToxCast)]-->invitroData
-  NCI60[(NCI60)]-->invitroData
-  PubChem[(Pubchem)]-->compoundData
-  ChEMBL[(ChEMBL)]-->compoundData
-  CosmosDB[(CosmosDB)]-->compoundData
+  Tox21[(Tox21)]-->|BioBrick| invitroData
+  EPAA[(EPAA)]-->|BioBrick| invitroData
+  ToxCast[(ToxCast)]-->|BioBrick| invitroData
+  NCI60[(NCI60)]-->|BioBrick| invitroData
+  PubChem[(Pubchem)]-->|BioBrick| compoundData
+  ChEMBL[(ChEMBL)]-->|BrioBrick| compoundData
+  CosmosDB[(CosmosDB)]-->|REST| compoundData
   
   Bookshelf[(Bookshelf)]-->LiverToxBook-->NLP
   compoundData-->ASPIS4j[(ASPIS4j)]
@@ -103,10 +103,11 @@ graph TD
   ASPIS4j[(ASPIS4j)]-->FAIRsharing
   ASPIS4j[(ASPIS4j)]-->RDF[(RDF)]
   RDF[(RDF)]-->ASPIS4j[(ASPIS4j)]
+  
   AOPWiki[(AOPWiki)]-->|RDF| RDF[(RDF)]
   WikiPathways[(WikiPathways)]-->|RDF| pathwayData
   RDF[(RDF)]-->AOP
-  PathwayCommons[(PathwayCommons)]-->pathwayData
+  PathwayCommons[(PathwayCommons)]-->|PaxToolsR| pathwayData
   
   ASPIS4j[(ASPIS4j)]-->RASAR
   ASPIS4j[(ASPIS4j)]-->BNN
