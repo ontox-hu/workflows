@@ -117,8 +117,8 @@ flowchart TD
   ASPIS4j[(ASPIS4j)]-->RASAR
   ASPIS4j[(ASPIS4j)]-->BNN
   RASAR-->AI
-  BNN-->AI[fa:fa-microchip AI]
-  AI[fa:fa-microchip AI]-->ProbRA
-  
+  BNN-->AI
+  AI-->ProbRA
+  AI-->F[fa:fa-car Car]
   
 ```
