@@ -1,5 +1,5 @@
 ```mermaid
-graph TD
+flowdiagram
   
   ONTOX-->Cases
 
