@@ -23,7 +23,7 @@ flowchart TD
   
   
   SystematicReview((SystematicReview))-->Phase1AbstractScreen((Phase1AbstractScreen))
-  ((Phase1AbstractScreen))-->Phase2FullTextDataExtraction((Phase2FullTextDataExtraction))
+  Phase1AbstractScreen((Phase1AbstractScreen))-->Phase2FullTextDataExtraction((Phase2FullTextDataExtraction))
   Sysrev[(Sysrev)]-->NLP
   NLP-->|en-tox| NER
   NER-->|CREW| CausalRelations
