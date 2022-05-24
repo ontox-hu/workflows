@@ -31,22 +31,22 @@ flowchart TD
   CausalRelations-->PhysMaps((PhysMaps))
   
   
-  Phase2FullTextDataExtraction-->patientData
-  Phase2FullTextDataExtraction-->clinicalChemistryData
-  Phase2FullTextDataExtraction-->exposureData
-  Phase2FullTextDataExtraction-->invitroData
-  Phase2FullTextDataExtraction-->Models
-  Phase2FullTextDataExtraction-->geneExpressionData
-  Phase2FullTextDataExtraction-->animalData
+  Phase2FullTextDataExtraction((Phase2FullTextDataExtraction))-->patientData{patientData}
+  Phase2FullTextDataExtraction((Phase2FullTextDataExtraction))-->clinicalChemistryData{clinicalChemistryData}
+  Phase2FullTextDataExtraction((Phase2FullTextDataExtraction))-->exposureData{exposureData}
+  Phase2FullTextDataExtraction((Phase2FullTextDataExtraction))-->invitroData{invitroData}
+  Phase2FullTextDataExtraction((Phase2FullTextDataExtraction))-->Models(Models)
+  Phase2FullTextDataExtraction((Phase2FullTextDataExtraction))-->geneExpressionData{geneExpressionData}
+  Phase2FullTextDataExtraction((Phase2FullTextDataExtraction))-->animalData{animalData}
   
-  clinicalChemistryData-->PhysMaps((PhysMaps))
-  invitroData-->PhysMaps((PhysMaps))
-  geneExpressionData-->PhysMaps((PhysMaps))
-  animalData-->PhysMaps((PhysMaps))
-  exposureData-->qAOP
-  clinicalChemistryData-->qAOP
-  patientData-->qAOP
-  animalData-->qAOP
+  clinicalChemistryData{clinicalChemistryData}-->PhysMaps((PhysMaps))
+  invitroData{invitroData}-->PhysMaps((PhysMaps))
+  geneExpressionData{geneExpressionData}-->PhysMaps((PhysMaps))
+  animalData{animalData}-->PhysMaps((PhysMaps))
+  exposureData{exposureData}-->qAOP
+  clinicalChemistryData{clinicalChemistryData}-->qAOP
+  patientData{patientData}-->qAOP
+  animalData{animalData}-->qAOP
   
   PhysMaps((PhysMaps))-->AOP-->qAOP
   qAOP-->ASPIS4j[(ASPIS4j)]
