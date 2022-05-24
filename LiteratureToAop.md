@@ -11,7 +11,7 @@ flowchart TD
   KidneyTox-->SystematicReview
   BrainDevTox-->SystematicReview
   
-  SystematicReview-->Sysrev[(Sysrev)]
+  Sysrev[(Sysrev)]-->SystematicReview
   
   Sysrev[(Sysrev)]-->|SBtabLabels| rsr
   rsr-->|SysrevAPI| Phymdos
