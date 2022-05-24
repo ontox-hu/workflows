@@ -11,15 +11,15 @@ flowchart TD
   KidneyTox-->SystematicReview
   BrainDevTox-->SystematicReview
   
-  Sysrev[(Sysrev)]-->SystematicReview
+  ((SystematicReview))-->Sysrev[(Sysrev)]
   
   Sysrev[(Sysrev)]-->|SBtabLabels| rsr
   rsr-->|SysrevAPI| Phymdos
   Phymdos-->|SBMLConverter| CellDesigner
   Phymdos-->|SBMLConverter| MINERVA
   Phymdos-->|GraphQL| ASPIS4j
-  CellDesigner-->PhysMaps
-  MINERVA-->PhysMaps
+  (CellDesigner)-->((PhysMaps))
+  (MINERVA)-->PhysMaps
   
   
   SystematicReview-->Phase1AbstractScreen
