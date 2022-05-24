@@ -16,7 +16,7 @@ graph TD
   Phymdos-->|SBMLConverter| CellDesigner
   Phymdos-->|SBMLConverter| MINERVA
   Phymdos-->|GraphQL| ASPIS4j
-  CellsDesigner-->PhysMaps
+  CellDesigner-->PhysMaps
   MINERVA-->PhysMaps
   
   
