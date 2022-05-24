@@ -103,9 +103,10 @@ graph TD
   ASPIS4j[(ASPIS4j)]-->FAIRsharing
   ASPIS4j[(ASPIS4j)]-->RDF[(RDF)]
   RDF[(RDF)]-->ASPIS4j[(ASPIS4j)]
-  AOPWiki-->|RDF| RDF[(RDF)]
-  WikiPathways-->|RDF| pathwayData
+  AOPWiki[(AOPWiki)]-->|RDF| RDF[(RDF)]
+  WikiPathways[(WikiPathways)]-->|RDF| pathwayData
   RDF[(RDF)]-->AOP
+  PathwayCommons[(PathwayCommons)]-->pathwayData
   
   ASPIS4j[(ASPIS4j)]-->RASAR
   ASPIS4j[(ASPIS4j)]-->BNN
