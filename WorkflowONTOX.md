@@ -117,7 +117,7 @@ flowchart TD
   ASPIS4j[(ASPIS4j)]-->RASAR
   ASPIS4j[(ASPIS4j)]-->BNN
   RASAR-->AI
-  BNN-->AI
+  BNN-->AI[fa:fa-microchip AI]
   AI-->ProbRA
   
   
