@@ -10,9 +10,7 @@ flowchart TB
     CellDesigner-->ASPIS4j[(ASPIS4j)]
     MINERVA-->ASPIS4j[(ASPIS4j)]
     ASPIS4j[(ASPIS4j)]-->AI
-    ExternalSoftware-->VHP4SafetyPlatform
     end
-    
     
     subgraph VHP4Safety
     Phymdos-->RDF[(RDF)]
