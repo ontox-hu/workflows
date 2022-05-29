@@ -11,6 +11,8 @@ flowchart TB
     BrainCase-->LiteratureSources
     ThyroidCase-->LiteratureSources
     LiteratureSources-->Sysrev[(Sysrev)]
+     
+    
     Sysrev[(Sysrev)]-->Phymdos
     Phymdos-->SBML
     SBML-->CellDesigner
