@@ -19,6 +19,7 @@ flowchart TB
     CellDesigner-->PhysMaps
     MINERVA-->PhysMaps
     PhysMaps-->AOP
+    GithubRepo
     
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
