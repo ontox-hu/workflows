@@ -1,9 +1,14 @@
 ```mermaid
 flowchart TB
+
+    
     literatureSources-->Sysrev[(Sysrev)]
     Sysrev[(Sysrev)]-->Phymdos
     
     subgraph ONTOX
+    cases-->KidneyCase
+    cases-->LiverCase
+    cases-->BrainCase
     Phymdos-->MINERVA
     Phymdos-->CellDesigner
     
@@ -14,6 +19,9 @@ flowchart TB
     end
     
     subgraph VHP4Safety
+    cases-->KidneyCase
+    cases-->ThyroidCase
+    cases-->BrainCase
     Phymdos-->RDF[(RDF)]
     RDF[(RDF)]-->AOPWiki
     
