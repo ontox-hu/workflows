@@ -19,7 +19,8 @@ flowchart TB
     CellDesigner-->PhysMaps
     MINERVA-->PhysMaps
     PhysMaps-->AOP
-    GithubRepo
+    VHP4SafetyServices-->GithubRepo
+    ONTOXDev-->GithubRepo
     
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
@@ -44,9 +45,7 @@ flowchart TB
     VHP4SafetyServices
     VHP4SafetyServices-->AI
     ONTOXDev-->AI
-    VHP4SafetyServices-->GithubRepo
-    
-    
+
     end
     
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
