@@ -45,7 +45,7 @@ flowchart TB
     end
     
     LiteratureSources-->ExternalSoftware
-    ExternalSoftware-->VHP4Safetyservices
+    ExternalSoftware-->VHP4SafetyServices
     ExternalSoftware-->ONTOXDev
     ExternalData-->ASPIS4j[(ASPIS4j)]
     RDF[(RDF)]-->qAOP
