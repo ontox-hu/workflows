@@ -19,6 +19,11 @@ flowchart TB
     SBML-->MINERVA
     SBML-->RDF[(RDF)]
     
+    CellDesigner-->PhysMaps
+    MINERVA-->PhysMaps
+    
+    PhysMaps-->AOP
+    
     subgraph ONTOX
     ONTOXDev
     Phymdos-->MINERVA
@@ -33,14 +38,14 @@ flowchart TB
     
     subgraph VHP4Safety
     Phymdos-->RDF[(RDF)]
-    RDF[(RDF)]-->AOPWiki
-    
-    VHP4SafetyPlatform
-    VHP4SafetyPlatform-->AI
+    RDF[(RDF)]-->AOP
+    AOP-->AOPWiki
+    VHP4SafetyServices
+    VHP4SafetyServices-->AI
     end
     
     LiteratureSources-->ExternalSoftware
-    ExternalSoftware-->VHP4SafetyPlatform
+    ExternalSoftware-->VHP4Safetyservices
     ExternalSoftware-->ONTOXDev
     ExternalData-->ASPIS4j[(ASPIS4j)]
     RDF[(RDF)]-->qAOP
