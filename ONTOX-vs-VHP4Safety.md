@@ -10,6 +10,7 @@ flowchart TB
     CellDesigner-->ASPIS4j[(ASPIS4j)]
     MINERVA-->ASPIS4j[(ASPIS4j)]
     ASPIS4j[(ASPIS4j)]-->AI
+    VHP4SafetyPlatform-->AI
     end
     
     subgraph VHP4Safety
