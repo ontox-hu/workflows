@@ -10,7 +10,7 @@ flowchart TB
     LiverCase-->LiteratureSources
     BrainCase-->LiteratureSources
     ThyroidCase-->LiteratureSources
-    literatureSources-->Sysrev[(Sysrev)]
+    LiteratureSources-->Sysrev[(Sysrev)]
     Sysrev[(Sysrev)]-->Phymdos
     
     subgraph ONTOX
