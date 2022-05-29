@@ -37,16 +37,16 @@ flowchart TB
     subgraph VHP4Safety
     
     Phymdos-->RDF[(RDF)]
-    RDF[(RDF)]-->AOP
-    AOP-->AOPWiki
     VHP4SafetyServices
     VHP4SafetyServices-->AI
     ONTOXDev-->AI
     
     end
     
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
-    
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+    RDF[(RDF)]-->AOP
+    AOP-->AOPWiki
     VHP4SafetyServices-->ONTOXDev
     AOP-->qAOP
     LiteratureSources-->ExternalSoftware
