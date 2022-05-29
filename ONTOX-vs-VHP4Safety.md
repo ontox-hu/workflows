@@ -46,13 +46,13 @@ flowchart TB
     end
     
     VHP4SafetyServices-->ONTOXDev
-    
+    AOP-->qAOP
     
     LiteratureSources-->ExternalSoftware
     ExternalSoftware-->VHP4SafetyServices
     ExternalSoftware-->ONTOXDev
     ExternalData-->ASPIS4j[(ASPIS4j)]
-    RDF[(RDF)]-->qAOP
+    
     ASPIS4j[(ASPIS4j)]-->qAOP
     ASPIS4j[(ASPIS4j)]-->RDF[(RDF)]
     ExternalData-->RDF[(RDF)]
