@@ -10,7 +10,7 @@ flowchart TB
     CellDesigner-->ASPIS4j[(ASPIS4j)]
     MINERVA-->ASPIS4j[(ASPIS4j)]
     ASPIS4j[(ASPIS4j)]-->AI
-    ExternalSoftware-->platform
+    ExternalSoftware-->VHP4SafetyPlatform
     end
     
     
@@ -18,7 +18,7 @@ flowchart TB
     Phymdos-->RDF[(RDF)]
     RDF[(RDF)]-->AOPWiki
     ExternalData-->RDF[(RDF)]
-    ExternalSoftware-->platform
+    ExternalSoftware-->VHP4SafetyPlatform
     end
     
     RDF[(RDF)]-->qAOP
