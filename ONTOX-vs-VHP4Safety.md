@@ -1,14 +1,14 @@
 ```mermaid
 flowchart TB
-    literatureSources-->Sysrev
+    literatureSources-->Sysrev[(Sysrev)]
     subgraph ONTOX
-    Sysrev-->Phymdos
+    Sysrev[(Sysrev)]-->Phymdos
     Phymdos-->MINERVA
     Phympdos-->CellDesigner
     end
     subgraph VHP4Safety
-    Sysrev-->Phymdos
-    Phymdos-->[(RDF)]
+    Sysrev[(Sysrev)]-->Phymdos
+    Phymdos-->RDF[(RDF)]
     end
     
 ```
