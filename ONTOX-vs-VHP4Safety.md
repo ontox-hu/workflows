@@ -9,6 +9,7 @@ flowchart TB
     ExternalData-->ASPIS4j[(ASPIS4j)]
     CellDesigner-->ASPIS4j[(ASPIS4j)]
     MINERVA-->ASPIS4j[(ASPIS4j)]
+    ASPIS4j[(ASPIS4j)]-->qAOP
     end
     ASPIS4j[(ASPIS4j)]-->RDF[(RDF)]
     
@@ -16,7 +17,11 @@ flowchart TB
     Phymdos-->RDF[(RDF)]
     RDF[(RDF)]-->AOPWiki
     ExternalData-->RDF[(RDF)]
+    RDF[(RDF)]-->qAOP
+    AOPWiki-->qAOP
     end
+    
+    
     
     
     
