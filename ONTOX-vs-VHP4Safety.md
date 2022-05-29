@@ -21,6 +21,7 @@ flowchart TB
     PhysMaps-->AOP
     VHP4SafetyServices-->GithubRepo
     ONTOXDev-->GithubRepo
+    ExternalData-->CompoundData
     
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
@@ -32,7 +33,6 @@ flowchart TB
     CellDesigner-->PhysMaps
     MINERVA-->PhysMaps
     ASPIS4j[(ASPIS4j)]-->AI
-    ExternalData-->CompoundData
     CompoundData-->ONTOX-HUB
     ONTOX-HUB-->ASPIS4j[(ASPIS4j)]
     end
