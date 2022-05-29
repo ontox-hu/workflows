@@ -4,7 +4,7 @@ flowchart TB
     cases-->KidneyCase
     cases-->LiverCase
     cases-->BrainCase
-    cases-->ThyroidCase 
+    
     KidneyCase-->LiteratureSources
     LiverCase-->LiteratureSources
     BrainCase-->LiteratureSources
@@ -36,6 +36,7 @@ flowchart TB
  
     subgraph VHP4Safety
     
+    cases-->ThyroidCase 
     Phymdos-->RDF[(RDF)]
     VHP4SafetyServices
     VHP4SafetyServices-->AI
