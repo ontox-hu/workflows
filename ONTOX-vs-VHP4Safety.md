@@ -33,7 +33,8 @@ flowchart TB
     MINERVA-->PhysMaps
     ASPIS4j[(ASPIS4j)]-->AI
     ExternalData-->CompoundData
-    CompoundData-->'ONTOX-HUB'
+    CompoundData-->ONTOX-HUB
+    ONTOX-HUB-->ASPIS4j[(ASPIS4j)]
     end
  
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
