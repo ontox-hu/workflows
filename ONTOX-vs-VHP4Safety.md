@@ -27,7 +27,6 @@ flowchart TB
     subgraph ONTOX
     
     ONTOXDev
-    ONTOXDev-->GithubRepo
     Phymdos-->MINERVA
     Phymdos-->CellDesigner
     CellDesigner-->PhysMaps
