@@ -18,9 +18,9 @@ flowchart TB
     RDF[(RDF)]-->AOPWiki
     ExternalData-->RDF[(RDF)]
     RDF[(RDF)]-->qAOP
-    AOPWiki-->qAOP
-    end
     
+    end
+    AOPWiki-->qAOP
     
     
     
