@@ -1,3 +1,4 @@
+```mermaid
 flowchart TB
     literatureSources-->Sysrev
     subgraph ONTOX
@@ -10,3 +11,4 @@ flowchart TB
     Phymdos-->[(RDF)]
     end
     
+```
