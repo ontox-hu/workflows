@@ -45,7 +45,7 @@ flowchart TB
     ONTOXDev--AI
     end
     
-    VHP4SafetyServices--ONTOXDev
+    VHP4SafetyServices-->ONTOXDev
     
     
     LiteratureSources-->ExternalSoftware
