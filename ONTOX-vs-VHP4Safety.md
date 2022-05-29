@@ -1,14 +1,17 @@
 ```mermaid
 flowchart TB
     literatureSources-->Sysrev[(Sysrev)]
+    
     subgraph ONTOX
     Sysrev[(Sysrev)]-->Phymdos
     Phymdos-->MINERVA
     Phymdos-->CellDesigner
     ExternalData-->ASPIS4j[(ASPIS4j)]
     CellDesigner-->RDF[(RDF)]
-    RDF[(RDF)]-->AOPWiki
+    MINERVA-->RDF[(RDF)]
+    
     end
+    
     subgraph VHP4Safety
     Sysrev[(Sysrev)]-->Phymdos
     Phymdos-->RDF[(RDF)]
