@@ -52,7 +52,6 @@ flowchart TB
  
     RDF[(RDF)]-->AOP
     AOP-->AOPWiki
-    VHP4SafetyServices-->ONTOXDev
     AOP-->qAOP
     LiteratureSources-->ExternalSoftware
     ExternalSoftware-->VHP4SafetyServices
