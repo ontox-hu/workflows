@@ -20,6 +20,7 @@ flowchart TB
     ExternalData-->RDF[(RDF)]
     ExternalSoftware-->platform
     end
+    
     RDF[(RDF)]-->qAOP
     ASPIS4j[(ASPIS4j)]-->qAOP
     ASPIS4j[(ASPIS4j)]-->RDF[(RDF)]
