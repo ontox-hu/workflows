@@ -14,6 +14,7 @@ flowchart TB
     Sysrev[(Sysrev)]-->Phymdos
     
     subgraph ONTOX
+    ONTOXDev
     Phymdos-->MINERVA
     Phymdos-->CellDesigner
     
@@ -27,10 +28,14 @@ flowchart TB
     Phymdos-->RDF[(RDF)]
     RDF[(RDF)]-->AOPWiki
     
-    ExternalSoftware-->VHP4SafetyPlatform
+    VHP4SafetyPlatform
     VHP4SafetyPlatform-->AI
     end
     
+    LiteratureCources-->ExternalSoftware
+    ExternalSoftware-->VHP4SafetyPlatform
+    ExternalSoftware-->ONTOXDev
+    HP4SafetyPlatform<-->ONTOXDev
     ExternalData-->ASPIS4j[(ASPIS4j)]
     RDF[(RDF)]-->qAOP
     ASPIS4j[(ASPIS4j)]-->qAOP
