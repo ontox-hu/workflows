@@ -7,8 +7,8 @@ flowchart TB
     Phymdos-->MINERVA
     Phymdos-->CellDesigner
     ExternalData-->ASPIS4j[(ASPIS4j)]
-    CellDesigner-->RDF[(RDF)]
-    MINERVA-->RDF[(RDF)]
+    CellDesigner-->ASPIS4j[(ASPIS4j)]
+    MINERVA-->ASPIS4j[(ASPIS4j)]
     
     end
     
