@@ -1,9 +1,9 @@
 ```mermaid
 flowchart TB
     literatureSources-->Sysrev[(Sysrev)]
+    Sysrev[(Sysrev)]-->Phymdos
     
     subgraph ONTOX
-    Sysrev[(Sysrev)]-->Phymdos
     Phymdos-->MINERVA
     Phymdos-->CellDesigner
     ExternalData-->ASPIS4j[(ASPIS4j)]
