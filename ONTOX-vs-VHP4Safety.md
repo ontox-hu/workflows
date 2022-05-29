@@ -4,6 +4,7 @@ flowchart TB
     cases-->KidneyCase
     cases-->LiverCase
     cases-->BrainCase
+    cases-->ThyroidCase
     
     KidneyCase-->LiteratureSources
     LiverCase-->LiteratureSources
@@ -18,7 +19,7 @@ flowchart TB
     CellDesigner-->PhysMaps
     MINERVA-->PhysMaps
     PhysMaps-->AOP
- 
+    
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
     subgraph ONTOX
@@ -36,7 +37,7 @@ flowchart TB
  
     subgraph VHP4Safety
     
-    cases-->ThyroidCase 
+    ThyroidCase 
     Phymdos-->RDF[(RDF)]
     VHP4SafetyServices
     VHP4SafetyServices-->AI
