@@ -32,7 +32,7 @@ flowchart TB
     VHP4SafetyPlatform-->AI
     end
     
-    LiteratureCources-->ExternalSoftware
+    LiteratureSources-->ExternalSoftware
     ExternalSoftware-->VHP4SafetyPlatform
     ExternalSoftware-->ONTOXDev
     HP4SafetyPlatform<-->ONTOXDev
