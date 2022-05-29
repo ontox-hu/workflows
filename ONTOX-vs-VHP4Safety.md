@@ -9,6 +9,7 @@ flowchart TB
     ExternalData-->ASPIS4j[(ASPIS4j)]
     CellDesigner-->ASPIS4j[(ASPIS4j)]
     MINERVA-->ASPIS4j[(ASPIS4j)]
+    ASPIS4j[(ASPIS4j)]-->DF[(RDF)]
     end
     
     subgraph VHP4Safety
@@ -16,5 +17,8 @@ flowchart TB
     RDF[(RDF)]-->AOPWiki
     ExternalData-->RDF[(RDF)]
     end
+    
+    
+    
     
 ```
