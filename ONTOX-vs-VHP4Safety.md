@@ -32,7 +32,8 @@ flowchart TB
     CellDesigner-->PhysMaps
     MINERVA-->PhysMaps
     ASPIS4j[(ASPIS4j)]-->AI
-    
+    ExternalData-->CompoundData
+    CompoundData-->'ONTOX-HUB'
     end
  
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
