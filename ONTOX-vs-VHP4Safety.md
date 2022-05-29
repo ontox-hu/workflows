@@ -42,7 +42,7 @@ flowchart TB
     AOP-->AOPWiki
     VHP4SafetyServices
     VHP4SafetyServices-->AI
-    ONTOXDev--AI
+    ONTOXDev-->AI
     end
     
     VHP4SafetyServices-->ONTOXDev
