@@ -12,6 +12,10 @@ flowchart TB
     ThyroidCase-->LiteratureSources
     LiteratureSources-->Sysrev[(Sysrev)]
     Sysrev[(Sysrev)]-->Phymdos
+    Phymdos-->SBML
+    SBML-->CellDesigner
+    SBML-->MINERVA
+    SBML-->RDF[(RDF)]
     
     subgraph ONTOX
     ONTOXDev
@@ -23,6 +27,7 @@ flowchart TB
     ASPIS4j[(ASPIS4j)]-->AI
     
     end
+    
     
     subgraph VHP4Safety
     Phymdos-->RDF[(RDF)]
