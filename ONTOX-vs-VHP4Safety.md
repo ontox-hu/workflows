@@ -9,8 +9,8 @@ flowchart TB
     ExternalData-->ASPIS4j[(ASPIS4j)]
     CellDesigner-->ASPIS4j[(ASPIS4j)]
     MINERVA-->ASPIS4j[(ASPIS4j)]
-    ASPIS4j[(ASPIS4j)]-->DF[(RDF)]
     end
+    ASPIS4j[(ASPIS4j)]-->DF[(RDF)]
     
     subgraph VHP4Safety
     Phymdos-->RDF[(RDF)]
