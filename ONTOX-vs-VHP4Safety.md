@@ -25,6 +25,7 @@ flowchart TB
     subgraph ONTOX
     
     ONTOXDev
+    ONTOXDev-->GithubRepo
     Phymdos-->MINERVA
     Phymdos-->CellDesigner
     CellDesigner-->PhysMaps
@@ -42,6 +43,8 @@ flowchart TB
     VHP4SafetyServices
     VHP4SafetyServices-->AI
     ONTOXDev-->AI
+    VHP4SafetyServices-->GithubRepo
+    
     
     end
     
