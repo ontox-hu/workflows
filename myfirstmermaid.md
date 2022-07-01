@@ -1,7 +1,6 @@
 ```mermaid
 
-Sysrev[(Sysrev)]-->|SBtabLabels| rsr
-rsr-->|SysrevAPI| Phymdos
-  
+a-->b
+b-->c
  
 ```
