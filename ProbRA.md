@@ -8,6 +8,8 @@ flowchart TD
   Absortion-->Systemic_Circulation
   Systemic_Circulation-->Tissue
   Tissue-->Exposure_Int
+  
+  end
 
   subgraph 2
 
@@ -15,6 +17,9 @@ flowchart TD
   Absortion-->Systemic_Circulation
   Systemic_Circulation-->Tissue
   Tissue-->Exposure_Int
+  
+  end
+  
 ```
 
 
