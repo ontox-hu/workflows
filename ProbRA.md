@@ -6,6 +6,8 @@ flowchart TD
   Data_Extraction-->NAMS
   Artificial_Intelligence-->Data_Integration
   Data_Integration-->NAMS
+  Exposure_InVitro-->QIVIVE
+  QIVIVE-->Exposure_Int
   
   subgraph animal_data
   
@@ -18,8 +20,7 @@ flowchart TD
 
   subgraph nams_data
   
-  NAMS-->Exposure_Int
-  
+  NAMS-->Exposure_InVitro
   
   end
   
