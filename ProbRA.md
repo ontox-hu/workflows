@@ -2,8 +2,11 @@
 ```mermaid
 flowchart TD
 
-  subgraph 1
+  Artificial_Intelligence-->Data_Extraction
+  Artificial_Intelligence-->Data_Integration
 
+  subgraph animal_data
+  
   Exposure_Ext-->Absortion
   Absortion-->Systemic_Circulation
   Systemic_Circulation-->Tissue
@@ -11,8 +14,9 @@ flowchart TD
   
   end
 
-  subgraph 2
-
+  subgraph nams_data
+  
+  NAMS-->Exposure_Int
   Exposure_Ext2-->Absortion2
   Absortion2-->Systemic_Circulation2
   Systemic_Circulation2-->Tissue2
