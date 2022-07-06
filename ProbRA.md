@@ -3,8 +3,10 @@
 flowchart TD
 
   Artificial_Intelligence-->Data_Extraction
+  Data_Extraction-->NAMS
   Artificial_Intelligence-->Data_Integration
-
+  Data_Integration-->NAMS
+  
   subgraph animal_data
   
   Exposure_Ext-->Absortion
