@@ -19,10 +19,7 @@ flowchart TD
   subgraph nams_data
   
   NAMS-->Exposure_Int
-  Exposure_Ext2-->Absortion2
-  Absortion2-->Systemic_Circulation2
-  Systemic_Circulation2-->Tissue2
-  Tissue2-->Exposure_Int2
+  
   
   end
   
