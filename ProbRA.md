@@ -20,3 +20,6 @@ var insertSvg = function(svgCode, bindFunctions) {
 var graphDefinition = `graph LR; Systemstart-->SomeIcon(<img src='https://iconscout.com/ms-icon-310x310.png' width='40' height='40' />)`;
 var graph = mermaidAPI.render("mermaid", graphDefinition, insertSvg);
 
+<script src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js"></script>
+
+<div id="app"></div>
