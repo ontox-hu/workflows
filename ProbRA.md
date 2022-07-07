@@ -50,7 +50,7 @@ flowchart TD
   
   subgraph TTC
   
-  Exposure_Int(Exposure_Int _/\_)-->{History_of_Safe_Use}
+  Exposure_Int(Exposure_Int _/\_)-->History_of_Safe_Use{History_of_Safe_Use}
   History_of_Safe_Use{History_of_Safe_Use}-->|yes| TTC(TTC)
   History_of_Safe_Use{History_of_Safe_Use}-->|no| TTC(TTC)
   
