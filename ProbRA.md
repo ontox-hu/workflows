@@ -5,11 +5,11 @@ flowchart TD
 
   subgraph Exposure_Scenarios
   
-  Intended_Use?-->|yes| Exposure_Ext{Exposure_Ext}
+  Intended_Use?-->|yes| Exposure_Ext(Exposure_Ext _/\_ )
   Intended_Use?-->|no| No_Risk_Assessment{No_Risk_Assessment}
   Chemical_Spill?-->|yes| No_Risk_Assessment{No_Risk_Assessment}
   No_Risk_Assessment{No_Risk_Assessment}--> |Clinical_Case_Available?| Case_Study_Data(Case_Study_data)
-  Case_Study_Data(Case_Study_data)-->Exposure_Ext{Exposure_Ext}
+  Case_Study_Data(Case_Study_data)-->Exposure_Ext(Exposure_Ext _/\_ )
   
   
   end
@@ -28,10 +28,10 @@ flowchart TD
   
   subgraph animal_data
   
-  Exposure_Ext-->Absortion
-  Absortion-->Systemic_Circulation
-  Systemic_Circulation-->Tissue
-  Tissue-->Exposure_Int(Exposure_Int)
+  Exposure_Ext(Exposure_Ext _/\_)-->Absortion(Absorption _/\_)
+  Absortion(Absorption _/\_)-->Systemic_Circulation(Systemic_Circulation _/\_)
+  Systemic_Circulation(Systemic_Circulation _/\_)-->Tissue(Tissue _/\_)
+  Tissue(Tissue _/\_)-->Exposure_Int(Exposure_Int _/\_)
   
   end
   
@@ -39,14 +39,24 @@ flowchart TD
   
   subgraph nams_data
   
-  NAMS-->Exposure_InVitro
+  NAMS-->Exposure_InVitro(Exposure_InVitro _/\_)
   Data_Integration-->NAMS
   Exposure_InVitro-->QIVIVE
-  QIVIVE-->Exposure_Int
+  QIVIVE-->Exposure_Int(Exposure_Int _/\_)
   
   end
   
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  subgraph TTC
+  
+  Exposure_Int(Exposure_Int _/\_)-->{History_of_Safe_Use}
+  {History_of_Safe_Use}-->|yes| TTC(TTC)
+  {History_of_Safe_Use}-->|no| TTC(TTC)
+  
+  end
+  
+  
   
 ```
 
