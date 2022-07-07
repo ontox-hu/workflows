@@ -9,7 +9,7 @@ flowchart TD
   Intended_Use?-->|no| No_Risk_Assessment{No_Risk_Assessment}
   Chemical_Spill?-->|yes| No_Risk_Assessment{No_Risk_Assessment}
   No_Risk_Assessment{No_Risk_Assessment}--> |Clinical_Case_Available?| Case_Study_Data(Case_Study_data)
-  
+  Case_Study_Data(Case_Study_data)-->Exposure_Ext{Exposure_Ext}
   
   
   end
