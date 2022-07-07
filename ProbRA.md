@@ -52,7 +52,7 @@ flowchart TD
   
   Exposure_Int(Exposure_Int _/\_)-->History_of_Safe_Use{History_of_Safe_Use}
   History_of_Safe_Use{History_of_Safe_Use}-->|yes| TTC(TTC)
-  History_of_Safe_Use{History_of_Safe_Use}-->|no| ProbRA(ProbRA)
+  History_of_Safe_Use{History_of_Safe_Use}-->C
   
   end
   
