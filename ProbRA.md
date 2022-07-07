@@ -31,7 +31,7 @@ flowchart TD
   Exposure_Ext-->Absortion
   Absortion-->Systemic_Circulation
   Systemic_Circulation-->Tissue
-  Tissue-->Exposure_Int_/\_(Exposure_Int)
+  Tissue-->Exposure_Int(Exposure_Int)
   
   end
   
