@@ -5,9 +5,12 @@ flowchart TD
 
   subgraph Exposure_Scenarios
   
-  Intended_Use-->Exposure_Ext
-  Unintended_Use-->No_Risk_Assessment
-  Chemical_Spill-->No_Risk_Assessment
+  Intended_Use?-->|yes| Exposure_Ext{Exposure_Ext}
+  Intended_Use?-->|no| No_Risk_Assessment{No_Risk_Assessment}
+  Chemical_Spill?-->|yes| No_Risk_Assessment{No_Risk_Assessment}
+  No_Risk_Assessment{No_Risk_Assessment}--> |Clinical_Case_Available?| Case_Study_Data(Case_Study_data)
+  
+  
   
   end
 
@@ -18,9 +21,6 @@ flowchart TD
   Artificial_Intelligence-->Data_Extraction
   Data_Extraction-->NAMS
   Artificial_Intelligence-->Data_Integration
-  Data_Integration-->NAMS
-  Exposure_InVitro-->QIVIVE
-  QIVIVE-->Exposure_Int
   
   end
   
@@ -40,6 +40,9 @@ flowchart TD
   subgraph nams_data
   
   NAMS-->Exposure_InVitro
+  Data_Integration-->NAMS
+  Exposure_InVitro-->QIVIVE
+  QIVIVE-->Exposure_Int
   
   end
   
