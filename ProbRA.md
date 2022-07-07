@@ -48,10 +48,10 @@ flowchart TD
   
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
-  subgraph TTC
+  subgraph
   
   Exposure_Int(Exposure_Int _/\_)-->History_of_Safe_Use{History_of_Safe_Use}
- 
+  History_of_Safe_Use{History_of_Safe_Use}-->|yes| TTC(TTC)
   
   
   end
