@@ -2,7 +2,8 @@
 ```mermaid
 flowchart TD
 
-
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
   subgraph Exposure_Scenarios
   
   Intended_Use?-->|yes| Exposure_Ext(Exposure_Ext _/\_ )
@@ -11,6 +12,14 @@ flowchart TD
   No_Risk_Assessment{No_Risk_Assessment}--> |Clinical_Case_Available?| Case_Study_Data(Case_Study_data)
   Case_Study_Data(Case_Study_data)-->Exposure_Ext(Exposure_Ext _/\_ )
   
+  end
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  subgraph GRAS
+  
+  History_of_Safe_Use{History_of_Safe_Use}-->|yes| TTC(TTC)
+  History_of_Safe_Use{History_of_Safe_Use}-->|no| Exposure_Ext(Exposure_Ext _/\_ )
   
   end
 
@@ -48,20 +57,11 @@ flowchart TD
   
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
-  subgraph GRAS
-  
-  Exposure_Int(Exposure_Int _/\_)-->History_of_Safe_Use{History_of_Safe_Use}
-  History_of_Safe_Use{History_of_Safe_Use}-->|yes| TTC(TTC)
   
   
-  end
+  
   
   
   
 ```
-
-
-
-
-
 
